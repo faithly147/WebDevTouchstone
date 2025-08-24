@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Wireframes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #333; /* Dark gray for text */
+            background-color: #f9f9f9; /* Light gray background */
+        }
+        .wireframe-container {
+            border: 1px solid #ccc;
+            margin: 2rem auto;
+            max-width: 90%;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding-bottom: 1rem;
+        }
+        .wireframe-title {
+            background-color: #e0e0e0; /* Gray for title background */
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            font-size: 1.25rem;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .section-label {
+            background-color: #f0f0f0; /* Lighter gray for section labels */
+            padding: 0.5rem 0;
+            text-align: center;
+            border-bottom: 1px dashed #e0e0e0;
+            color: #555;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .placeholder-box {
+            background-color: #e0e0e0; /* Gray for placeholders */
+            border: 1px dashed #a0a0a0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+            font-size: 0.9rem;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .placeholder-text {
+            background-color: #f0f0f0; /* Lighter gray for text placeholders */
+            height: 1rem;
+            border-radius: 2px;
+        }
+        .placeholder-btn {
+            background-color: #c0c0c0; /* Medium gray for buttons */
+            color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 500;
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Global Navigation for quick access -->
+    <nav class="bg-gray-800 text-white p-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-4 text-sm md:text-base">
+            <a href="#mobile-home" class="hover:text-gray-300 rounded-md px-3 py-2">Mobile Home</a>
+            <a href="#mobile-gallery" class="hover:text-gray-300 rounded-md px-3 py-2">Mobile Gallery</a>
+            <a href="#mobile-about" class="hover:text-gray-300 rounded-md px-3 py-2">Mobile About Us</a>
+            <a href="#mobile-shop" class="hover:text-gray-300 rounded-md px-3 py-2">Mobile Shop</a>
+            <span class="text-gray-500 hidden md:inline">|</span>
+            <a href="#desktop-home" class="hover:text-gray-300 rounded-md px-3 py-2">Desktop Home</a>
+            <a href="#desktop-gallery" class="hover:text-gray-300 rounded-md px-3 py-2">Desktop Gallery</a>
+            <a href="#desktop-about" class="hover:text-gray-300 rounded-md px-3 py-2">Desktop About Us</a>
+            <a href="#desktop-shop" class="hover:text-gray-300 rounded-md px-3 py-2">Desktop Shop</a>
+        </div>
+    </nav>
+
+    <!-- Wireframe Sections -->
+
+    <!-- Mobile Wireframes -->
+    <div id="mobile-home" class="wireframe-container w-[375px] md:w-full">
+        <div class="wireframe-title">Mobile: Homepage (375px width)</div>
+        <!-- Header -->
+        <div class="section-label">Header</div>
+        <header class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="placeholder-box h-8 w-24 text-xs">Logo</div>
+            <div class="placeholder-box h-8 w-8 text-xs">☰ Menu</div>
+        </header>
+
+        <!-- Navigation (Mobile) -->
+        <div class="section-label">Navigation</div>
+        <nav class="flex justify-around items-center p-3 border-b border-gray-200 bg-gray-100">
+            <div class="placeholder-btn text-xs">Home</div>
+            <div class="placeholder-btn text-xs">Gallery</div>
+            <div class="placeholder-btn text-xs">About</div>
+            <div class="placeholder-btn text-xs">Shop</div>
+        </nav>
+
+        <!-- Main Content - Hero Section -->
+        <div class="section-label">Main Content: Hero Section</div>
+        <section class="p-4 space-y-4">
+            <div class="placeholder-box h-48 w-full">Hero Image</div>
+            <h1 class="text-xl font-semibold placeholder-text w-3/4 h-6 mx-auto"></h1>
+            <div class="h-4 placeholder-text w-full mx-auto"></div>
+            <div class="h-4 placeholder-text w-5/6 mx-auto"></div>
+            <div class="placeholder-btn mx-auto mt-4 w-fit">Call to Action Button</div>
+        </section>
+
+        <!-- Main Content - Featured Section -->
+        <div class="section-label">Main Content: Featured Section</div>
+        <section class="p-4 space-y-4">
+            <h2 class="text-lg font-medium placeholder-text w-1/2 h-5 mx-auto"></h2>
+            <div class="flex flex-col gap-4">
+                <div class="border border-gray-300 p-3 rounded-md space-y-2">
+                    <div class="placeholder-box h-24 w-full">Featured Item Image</div>
+                    <div class="h-3 placeholder-text w-3/4 mx-auto"></div>
+                    <div class="h-3 placeholder-text w-1/2 mx-auto"></div>
+                </div>
+                <div class="border border-gray-300 p-3 rounded-md space-y-2">
+                    <div class="placeholder-box h-24 w-full">Featured Item Image</div>
+                    <div class="h-3 placeholder-text w-3/4 mx-auto"></div>
+                    <div class="h-3 placeholder-text w-1/2 mx-auto"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="section-label">Footer</div>
+        <footer class="p-4 border-t border-gray-200 text-center text-xs space-y-2 bg-gray-100">
+            <div class="h-3 placeholder-text w-1/2 mx-auto"></div>
+            <div class="flex justify-center gap-4">
+                <div class="placeholder-box h-6 w-6 text-xs">FB</div>
+                <div class="placeholder-box h-6 w-6 text-xs">IG</div>
+                <div class="placeholder-box h-6 w-6 text-xs">TW</div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="mobile-gallery" class="wireframe-container w-[375px] md:w-full">
+        <div class="wireframe-title">Mobile: Gallery Page (375px width)</div>
+        <!-- Header -->
+        <div class="section-label">Header</div>
+        <header class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="placeholder-box h-8 w-24 text-xs">Logo</div>
+            <div class="placeholder-box h-8 w-8 text-xs">☰ Menu</div>
+        </header>
+
+        <!-- Navigation (Mobile) -->
+        <div class="section-label">Navigation</div>
+        <nav class="flex justify-around items-center p-3 border-b border-gray-200 bg-gray-100">
+            <div class="placeholder-btn text-xs">Home</div>
+            <div class="placeholder-btn text-xs">Gallery</div>
+            <div class="placeholder-btn text-xs">About</div>
+            <div class="placeholder-btn text-xs">Shop</div>
+        </nav>
+
+        <!-- Main Content - Gallery Grid -->
+        <div class="section-label">Main Content: Image Gallery</div>
+        <section class="p-4 space-y-4">
+            <h1 class="text-xl font-semibold placeholder-text w-1/3 h-6 mx-auto"></h1>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="placeholder-box h-32 w-full">Gallery Image 1</div>
+                <div class="placeholder-box h-32 w-full">Gallery Image 2</div>
+                <div class="placeholder-box h-32 w-full">Gallery Image 3</div>
+                <div class="placeholder-box h-32 w-full">Gallery Image 4</div>
+                <div class="placeholder-box h-32 w-full">Gallery Image 5</div>
+                <div class="placeholder-box h-32 w-full">Gallery Image 6</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="section-label">Footer</div>
+        <footer class="p-4 border-t border-gray-200 text-center text-xs space-y-2 bg-gray-100">
+            <div class="h-3 placeholder-text w-1/2 mx-auto"></div>
+            <div class="flex justify-center gap-4">
+                <div class="placeholder-box h-6 w-6 text-xs">FB</div>
+                <div class="placeholder-box h-6 w-6 text-xs">IG</div>
+                <div class="placeholder-box h-6 w-6 text-xs">TW</div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="mobile-about" class="wireframe-container w-[375px] md:w-full">
+        <div class="wireframe-title">Mobile: About Us Page (375px width)</div>
+        <!-- Header -->
+        <div class="section-label">Header</div>
+        <header class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="placeholder-box h-8 w-24 text-xs">Logo</div>
+            <div class="placeholder-box h-8 w-8 text-xs">☰ Menu</div>
+        </header>
+
+        <!-- Navigation (Mobile) -->
+        <div class="section-label">Navigation</div>
+        <nav class="flex justify-around items-center p-3 border-b border-gray-200 bg-gray-100">
+            <div class="placeholder-btn text-xs">Home</div>
+            <div class="placeholder-btn text-xs">Gallery</div>
+            <div class="placeholder-btn text-xs">About</div>
+            <div class="placeholder-btn text-xs">Shop</div>
+        </nav>
+
+        <!-- Main Content - About Section -->
+        <div class="section-label">Main Content: About Us</div>
+        <section class="p-4 space-y-4">
+            <h1 class="text-xl font-semibold placeholder-text w-1/3 h-6 mx-auto"></h1>
+            <div class="placeholder-box h-40 w-full">Company History / Team Image</div>
+            <div class="h-4 placeholder-text w-full mx-auto"></div>
+            <div class="h-4 placeholder-text w-5/6 mx-auto"></div>
+            <div class="h-4 placeholder-text w-full mx-auto"></div>
+            <div class="h-4 placeholder-text w-2/3 mx-auto"></div>
+        </section>
+
+        <!-- Footer -->
+        <div class="section-label">Footer</div>
+        <footer class="p-4 border-t border-gray-200 text-center text-xs space-y-2 bg-gray-100">
+            <div class="h-3 placeholder-text w-1/2 mx-auto"></div>
+            <div class="flex justify-center gap-4">
+                <div class="placeholder-box h-6 w-6 text-xs">FB</div>
+                <div class="placeholder-box h-6 w-6 text-xs">IG</div>
+                <div class="placeholder-box h-6 w-6 text-xs">TW</div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="mobile-shop" class="wireframe-container w-[375px] md:w-full">
+        <div class="wireframe-title">Mobile: Shop Page (375px width)</div>
+        <!-- Header -->
+        <div class="section-label">Header</div>
+        <header class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="placeholder-box h-8 w-24 text-xs">Logo</div>
+            <div class="placeholder-box h-8 w-8 text-xs">☰ Menu</div>
+        </header>
+
+        <!-- Navigation (Mobile) -->
+        <div class="section-label">Navigation</div>
+        <nav class="flex justify-around items-center p-3 border-b border-gray-200 bg-gray-100">
+            <div class="placeholder-btn text-xs">Home</div>
+            <div class="placeholder-btn text-xs">Gallery</div>
+            <div class="placeholder-btn text-xs">About</div>
+            <div class="placeholder-btn text-xs">Shop</div>
+        </nav>
+
+        <!-- Main Content - Product Listing -->
+        <div class="section-label">Main Content: Product Listing</div>
+        <section class="p-4 space-y-4">
+            <h1 class="text-xl font-semibold placeholder-text w-1/3 h-6 mx-auto"></h1>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="border border-gray-300 p-3 rounded-md space-y-2">
+                    <div class="placeholder-box h-40 w-full">Product Image</div>
+                    <div class="h-4 placeholder-text w-3/4"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                    <div class="placeholder-btn w-full mt-2">Add to Cart Button</div>
+                </div>
+                <div class="border border-gray-300 p-3 rounded-md space-y-2">
+                    <div class="placeholder-box h-40 w-full">Product Image</div>
+                    <div class="h-4 placeholder-text w-3/4"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                    <div class="placeholder-btn w-full mt-2">Add to Cart Button</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="section-label">Footer</div>
+        <footer class="p-4 border-t border-gray-200 text-center text-xs space-y-2 bg-gray-100">
+            <div class="h-3 placeholder-text w-1/2 mx-auto"></div>
+            <div class="flex justify-center gap-4">
+                <div class="placeholder-box h-6 w-6 text-xs">FB</div>
+                <div class="placeholder-box h-6 w-6 text-xs">IG</div>
+                <div class="placeholder-box h-6 w-6 text-xs">TW</div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Desktop Wireframes -->
+    <div id="desktop-home" class="wireframe-container max-w-4xl">
+        <div class="wireframe-title">Desktop: Homepage (Large Width)</div>
+        <!-- Header -->
+        <div class="section-label">Header</div>
+        <header class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="placeholder-box h-10 w-32">Logo</div>
+            <!-- Navigation (Desktop) -->
+            <nav class="flex gap-6">
+                <div class="placeholder-btn text-sm">Home</div>
+                <div class="placeholder-btn text-sm">Gallery</div>
+                <div class="placeholder-btn text-sm">About Us</div>
+                <div class="placeholder-btn text-sm">Shop</div>
+            </nav>
+        </header>
+
+        <!-- Main Content - Hero Section -->
+        <div class="section-label">Main Content: Hero Section</div>
+        <section class="p-8 space-y-6">
+            <div class="placeholder-box h-72 w-full">Hero Image</div>
+            <h1 class="text-3xl font-bold placeholder-text w-1/2 h-8 mx-auto"></h1>
+            <div class="h-5 placeholder-text w-3/4 mx-auto"></div>
+            <div class="h-5 placeholder-text w-2/3 mx-auto"></div>
+            <div class="placeholder-btn mx-auto mt-6 w-fit text-base px-6 py-3">Call to Action Button</div>
+        </section>
+
+        <!-- Main Content - Featured Section -->
+        <div class="section-label">Main Content: Featured Section</div>
+        <section class="p-8 space-y-8">
+            <h2 class="text-2xl font-semibold placeholder-text w-1/4 h-7 mx-auto"></h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-40 w-full">Featured Item Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-40 w-full">Featured Item Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-40 w-full">Featured Item Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="section-label">Footer</div>
+        <footer class="p-6 border-t border-gray-200 text-center text-sm space-y-3 bg-gray-100">
+            <div class="h-4 placeholder-text w-1/4 mx-auto"></div>
+            <div class="flex justify-center gap-6">
+                <div class="placeholder-box h-8 w-8">FB</div>
+                <div class="placeholder-box h-8 w-8">IG</div>
+                <div class="placeholder-box h-8 w-8">TW</div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="desktop-gallery" class="wireframe-container max-w-4xl">
+        <div class="wireframe-title">Desktop: Gallery Page (Large Width)</div>
+        <!-- Header -->
+        <div class="section-label">Header</div>
+        <header class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="placeholder-box h-10 w-32">Logo</div>
+            <nav class="flex gap-6">
+                <div class="placeholder-btn text-sm">Home</div>
+                <div class="placeholder-btn text-sm">Gallery</div>
+                <div class="placeholder-btn text-sm">About Us</div>
+                <div class="placeholder-btn text-sm">Shop</div>
+            </nav>
+        </header>
+
+        <!-- Main Content - Gallery Grid -->
+        <div class="section-label">Main Content: Image Gallery</div>
+        <section class="p-8 space-y-6">
+            <h1 class="text-3xl font-bold placeholder-text w-1/4 h-8 mx-auto"></h1>
+            <div class="grid grid-cols-4 gap-6">
+                <div class="placeholder-box h-48 w-full">Gallery Image 1</div>
+                <div class="placeholder-box h-48 w-full">Gallery Image 2</div>
+                <div class="placeholder-box h-48 w-full">Gallery Image 3</div>
+                <div class="placeholder-box h-48 w-full">Gallery Image 4</div>
+                <div class="placeholder-box h-48 w-full">Gallery Image 5</div>
+                <div class="placeholder-box h-48 w-full">Gallery Image 6</div>
+                <div class="placeholder-box h-48 w-full">Gallery Image 7</div>
+                <div class="placeholder-box h-48 w-full">Gallery Image 8</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="section-label">Footer</div>
+        <footer class="p-6 border-t border-gray-200 text-center text-sm space-y-3 bg-gray-100">
+            <div class="h-4 placeholder-text w-1/4 mx-auto"></div>
+            <div class="flex justify-center gap-6">
+                <div class="placeholder-box h-8 w-8">FB</div>
+                <div class="placeholder-box h-8 w-8">IG</div>
+                <div class="placeholder-box h-8 w-8">TW</div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="desktop-about" class="wireframe-container max-w-4xl">
+        <div class="wireframe-title">Desktop: About Us Page (Large Width)</div>
+        <!-- Header -->
+        <div class="section-label">Header</div>
+        <header class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="placeholder-box h-10 w-32">Logo</div>
+            <nav class="flex gap-6">
+                <div class="placeholder-btn text-sm">Home</div>
+                <div class="placeholder-btn text-sm">Gallery</div>
+                <div class="placeholder-btn text-sm">About Us</div>
+                <div class="placeholder-btn text-sm">Shop</div>
+            </nav>
+        </header>
+
+        <!-- Main Content - About Section -->
+        <div class="section-label">Main Content: About Us</div>
+        <section class="p-8 space-y-6">
+            <h1 class="text-3xl font-bold placeholder-text w-1/4 h-8 mx-auto"></h1>
+            <div class="flex gap-8 items-center">
+                <div class="placeholder-box h-64 w-1/2">Company History / Team Image</div>
+                <div class="w-1/2 space-y-4">
+                    <div class="h-5 placeholder-text w-full"></div>
+                    <div class="h-5 placeholder-text w-5/6"></div>
+                    <div class="h-5 placeholder-text w-full"></div>
+                    <div class="h-5 placeholder-text w-3/4"></div>
+                    <div class="h-5 placeholder-text w-full"></div>
+                </div>
+            </div>
+            <div class="h-5 placeholder-text w-full mx-auto"></div>
+            <div class="h-5 placeholder-text w-full mx-auto"></div>
+            <div class="h-5 placeholder-text w-2/3 mx-auto"></div>
+        </section>
+
+        <!-- Footer -->
+        <div class="section-label">Footer</div>
+        <footer class="p-6 border-t border-gray-200 text-center text-sm space-y-3 bg-gray-100">
+            <div class="h-4 placeholder-text w-1/4 mx-auto"></div>
+            <div class="flex justify-center gap-6">
+                <div class="placeholder-box h-8 w-8">FB</div>
+                <div class="placeholder-box h-8 w-8">IG</div>
+                <div class="placeholder-box h-8 w-8">TW</div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="desktop-shop" class="wireframe-container max-w-4xl">
+        <div class="wireframe-title">Desktop: Shop Page (Large Width)</div>
+        <!-- Header -->
+        <div class="section-label">Header</div>
+        <header class="flex justify-between items-center p-4 border-b border-gray-200">
+            <div class="placeholder-box h-10 w-32">Logo</div>
+            <nav class="flex gap-6">
+                <div class="placeholder-btn text-sm">Home</div>
+                <div class="placeholder-btn text-sm">Gallery</div>
+                <div class="placeholder-btn text-sm">About Us</div>
+                <div class="placeholder-btn text-sm">Shop</div>
+            </nav>
+        </header>
+
+        <!-- Main Content - Product Listing -->
+        <div class="section-label">Main Content: Product Listing</div>
+        <section class="p-8 space-y-6">
+            <h1 class="text-3xl font-bold placeholder-text w-1/4 h-8 mx-auto"></h1>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-48 w-full">Product Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                    <div class="placeholder-btn w-full mt-3 text-base py-2">Add to Cart Button</div>
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-48 w-full">Product Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                    <div class="placeholder-btn w-full mt-3 text-base py-2">Add to Cart Button</div>
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-48 w-full">Product Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                    <div class="placeholder-btn w-full mt-3 text-base py-2">Add to Cart Button</div>
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-48 w-full">Product Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                    <div class="placeholder-btn w-full mt-3 text-base py-2">Add to Cart Button</div>
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-48 w-full">Product Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                    <div class="placeholder-btn w-full mt-3 text-base py-2">Add to Cart Button</div>
+                </div>
+                <div class="border border-gray-300 p-4 rounded-md space-y-3">
+                    <div class="placeholder-box h-48 w-full">Product Image</div>
+                    <div class="h-4 placeholder-text w-4/5"></div>
+                    <div class="h-3 placeholder-text w-1/2"></div>
+                    <div class="placeholder-btn w-full mt-3 text-base py-2">Add to Cart Button</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="section-label">Footer</div>
+        <footer class="p-6 border-t border-gray-200 text-center text-sm space-y-3 bg-gray-100">
+            <div class="h-4 placeholder-text w-1/4 mx-auto"></div>
+            <div class="flex justify-center gap-6">
+                <div class="placeholder-box h-8 w-8">FB</div>
+                <div class="placeholder-box h-8 w-8">IG</div>
+                <div class="placeholder-box h-8 w-8">TW</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
